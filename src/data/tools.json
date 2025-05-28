@@ -1,0 +1,43 @@
+
+[
+  {
+    "name": "DALL-E 3",
+    "description": "OpenAI's advanced AI image generator that creates detailed images from text descriptions with improved safety and accuracy.",
+    "logoUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=100&h=100&fit=crop&crop=center",
+    "link": "https://openai.com/dall-e-3",
+    "tags": ["AI Art", "Text-to-Image", "Creative", "OpenAI"],
+    "slug": "dall-e-3"
+  },
+  {
+    "name": "Midjourney",
+    "description": "Popular AI art generator known for creating artistic and stylized images through Discord bot interface.",
+    "logoUrl": "https://images.unsplash.com/photo-1686191128892-c3e8ae6a5b25?w=100&h=100&fit=crop&crop=center",
+    "link": "https://midjourney.com",
+    "tags": ["AI Art", "Text-to-Image", "Creative", "Discord"],
+    "slug": "midjourney"
+  },
+  {
+    "name": "Stable Diffusion",
+    "description": "Open-source AI image generation model that can run locally or through various online platforms.",
+    "logoUrl": "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=100&h=100&fit=crop&crop=center",
+    "link": "https://stability.ai",
+    "tags": ["AI Art", "Open Source", "Text-to-Image", "Local"],
+    "slug": "stable-diffusion"
+  },
+  {
+    "name": "Canva AI",
+    "description": "AI-powered design tools within Canva for creating graphics, presentations, and marketing materials.",
+    "logoUrl": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=100&h=100&fit=crop&crop=center",
+    "link": "https://canva.com",
+    "tags": ["Design", "Templates", "Marketing", "Business"],
+    "slug": "canva-ai"
+  },
+  {
+    "name": "Figma AI",
+    "description": "AI features integrated into Figma for design automation, asset generation, and workflow optimization.",
+    "logoUrl": "https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=100&h=100&fit=crop&crop=center",
+    "link": "https://figma.com",
+    "tags": ["Design", "UI/UX", "Collaboration", "Prototyping"],
+    "slug": "figma-ai"
+  }
+]
