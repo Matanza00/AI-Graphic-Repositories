@@ -5,15 +5,7 @@ import ToolCard from '@/components/ToolCard';
 import SearchFilter from '@/components/SearchFilter';
 import { generateSiteJsonLd, generateBreadcrumbJsonLd } from '@/utils/seo';
 import toolsData from '@/data/tools.json';
-
-interface Tool {
-  name: string;
-  description: string;
-  logoUrl: string;
-  link: string;
-  tags: string[];
-  slug: string;
-}
+import { Tool } from '@/types/tool';
 
 const Index: React.FC = () => {
   const [filteredTools, setFilteredTools] = useState<Tool[]>(toolsData);
@@ -23,25 +15,35 @@ const Index: React.FC = () => {
     breadcrumb: generateBreadcrumbJsonLd()
   };
 
+  // Add structured data to page
+  React.useEffect(() => {
+    // Remove existing structured data
+    const existingScripts = document.querySelectorAll('script[type="application/ld+json"]');
+    existingScripts.forEach(script => script.remove());
+
+    // Add new structured data
+    const siteScript = document.createElement('script');
+    siteScript.type = 'application/ld+json';
+    siteScript.textContent = JSON.stringify(structuredData.site);
+    document.head.appendChild(siteScript);
+
+    const breadcrumbScript = document.createElement('script');
+    breadcrumbScript.type = 'application/ld+json';
+    breadcrumbScript.textContent = JSON.stringify(structuredData.breadcrumb);
+    document.head.appendChild(breadcrumbScript);
+
+    return () => {
+      // Cleanup on unmount
+      const scripts = document.querySelectorAll('script[type="application/ld+json"]');
+      scripts.forEach(script => script.remove());
+    };
+  }, []);
+
   return (
     <Layout
       title="AI Graphic Tools Directory - Discover the Best AI Design Tools"
       description="Explore the most comprehensive collection of AI-powered graphic design tools. Find the perfect AI tool for your creative projects."
     >
-      {/* Structured Data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(structuredData.site)
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(structuredData.breadcrumb)
-        }}
-      />
-
       <div className="space-y-8">
         {/* Search and Filter */}
         <SearchFilter
@@ -57,8 +59,8 @@ const Index: React.FC = () => {
                 key={tool.slug}
                 tool={tool}
                 onClick={() => {
-                  // Navigation would be handled by router in a real Next.js app
-                  window.location.href = `/tools/${tool.slug}`;
+                  // Navigation would be handled by router in a real app
+                  console.log(`Navigating to: /tools/${tool.slug}`);
                 }}
               />
             ))}

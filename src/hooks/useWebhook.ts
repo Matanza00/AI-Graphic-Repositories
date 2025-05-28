@@ -1,15 +1,8 @@
 
 import { useState } from 'react';
-import { useToast } from '@/components/ui/use-toast';
-
-interface Tool {
-  name: string;
-  description: string;
-  logoUrl: string;
-  link: string;
-  tags: string[];
-  slug: string;
-}
+import { useToast } from '@/hooks/use-toast';
+import { Tool } from '../types/tool';
+import { webhookHandler } from '../pages/api/webhook';
 
 export const useWebhook = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -29,15 +22,9 @@ export const useWebhook = () => {
         slug
       };
 
-      const response = await fetch('/api/webhook', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(tool),
-      });
+      const success = await webhookHandler(tool);
 
-      if (!response.ok) {
+      if (!success) {
         throw new Error('Failed to add tool');
       }
 
