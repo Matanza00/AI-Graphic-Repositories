@@ -14,33 +14,45 @@ const SearchFilter: React.FC<SearchFilterProps> = ({ tools, onFilteredToolsChang
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
 
-  // Get all unique tags from tools
+  // Get all unique tags from tools - with safety check
   const allTags = useMemo(() => {
+    if (!tools || !Array.isArray(tools)) {
+      return [];
+    }
+    
     const tagSet = new Set<string>();
     tools.forEach(tool => {
-      tool.tags.forEach(tag => tagSet.add(tag));
+      if (tool && tool.tags && Array.isArray(tool.tags)) {
+        tool.tags.forEach(tag => tagSet.add(tag));
+      }
     });
     return Array.from(tagSet).sort();
   }, [tools]);
 
-  // Filter tools based on search term and selected tags
+  // Filter tools based on search term and selected tags - with safety check
   const filteredTools = useMemo(() => {
+    if (!tools || !Array.isArray(tools)) {
+      return [];
+    }
+    
     let filtered = tools;
 
     // Filter by search term
     if (searchTerm) {
       const searchLower = searchTerm.toLowerCase();
       filtered = filtered.filter(tool =>
-        tool.name.toLowerCase().includes(searchLower) ||
-        tool.description.toLowerCase().includes(searchLower) ||
-        tool.tags.some(tag => tag.toLowerCase().includes(searchLower))
+        tool && (
+          (tool.name && tool.name.toLowerCase().includes(searchLower)) ||
+          (tool.description && tool.description.toLowerCase().includes(searchLower)) ||
+          (tool.tags && tool.tags.some(tag => tag && tag.toLowerCase().includes(searchLower)))
+        )
       );
     }
 
     // Filter by selected tags
     if (selectedTags.length > 0) {
       filtered = filtered.filter(tool =>
-        selectedTags.every(selectedTag =>
+        tool && tool.tags && selectedTags.every(selectedTag =>
           tool.tags.includes(selectedTag)
         )
       );
@@ -66,6 +78,8 @@ const SearchFilter: React.FC<SearchFilterProps> = ({ tools, onFilteredToolsChang
     setSearchTerm('');
     setSelectedTags([]);
   };
+
+  const toolsCount = tools ? tools.length : 0;
 
   return (
     <div className="sticky top-0 z-10 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 pb-6 mb-8">
@@ -119,7 +133,7 @@ const SearchFilter: React.FC<SearchFilterProps> = ({ tools, onFilteredToolsChang
 
         {/* Results Count */}
         <div className="text-sm text-gray-600 dark:text-gray-400">
-          Showing {filteredTools.length} of {tools.length} tools
+          Showing {filteredTools.length} of {toolsCount} tools
           {searchTerm && (
             <span> for "{searchTerm}"</span>
           )}
