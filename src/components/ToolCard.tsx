@@ -14,7 +14,7 @@ interface ToolCardProps {
 const ToolCard: React.FC<ToolCardProps> = ({ tool }) => {
   return (
     <Link to={`/tools/${tool.slug}`} className="block h-full">
-      <Card className="group glass-effect border-white/10 hover:border-blue-500/30 transition-all duration-300 cursor-pointer h-full glow-blue hover:glow-purple bg-transparent backdrop-blur-xl">
+      <Card className="group glass-effect border-white/10 hover:border-blue-500/30 transition-all duration-300 cursor-pointer h-full glow-blue hover:glow-purple bg-transparent backdrop-blur-xl rounded-2xl overflow-hidden">
         <CardHeader className="pb-4">
           <div className="flex items-start justify-between">
             <div className="flex items-center space-x-4">
@@ -55,7 +55,7 @@ const ToolCard: React.FC<ToolCardProps> = ({ tool }) => {
               <Badge
                 key={tag}
                 variant="secondary"
-                className="text-xs glass-effect border-white/20 text-blue-300 hover:text-white bg-blue-500/10 hover:bg-blue-500/20 transition-all duration-200"
+                className="text-xs glass-effect border-white/20 text-blue-300 hover:text-white bg-blue-500/10 hover:bg-blue-500/20 transition-all duration-200 rounded-full"
               >
                 <Sparkles className="w-3 h-3 mr-1" />
                 {tag}
