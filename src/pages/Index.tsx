@@ -1,14 +1,30 @@
-
 import React, { useState } from 'react';
 import Layout from '@/components/Layout';
 import ToolCard from '@/components/ToolCard';
 import SearchFilter from '@/components/SearchFilter';
+import PaginationControls from '@/components/PaginationControls';
+import { usePagination } from '@/hooks/usePagination';
 import { generateSiteJsonLd, generateBreadcrumbJsonLd } from '@/utils/seo';
 import toolsData from '@/data/tools.json';
 import { Tool } from '@/types/tool';
 
 const Index: React.FC = () => {
   const [filteredTools, setFilteredTools] = useState<Tool[]>(toolsData);
+
+  const {
+    currentPage,
+    totalPages,
+    paginatedItems,
+    hasMore,
+    showLoadMore,
+    loadMore,
+    goToPage,
+    nextPage,
+    prevPage,
+  } = usePagination({
+    items: filteredTools,
+    itemsPerPage: 12,
+  });
 
   const structuredData = {
     site: generateSiteJsonLd(),
@@ -53,15 +69,33 @@ const Index: React.FC = () => {
           />
         </div>
 
-        {/* Tools Grid */}
-        {filteredTools.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {filteredTools.map((tool) => (
-              <div key={tool.slug} className="card-3d">
-                <ToolCard tool={tool} />
+        {/* Tools Grid - Responsive: 3 columns on large, 2 on iPad, 1 on mobile */}
+        {paginatedItems.length > 0 ? (
+          <>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {paginatedItems.map((tool) => (
+                <div key={tool.slug} className="card-3d">
+                  <ToolCard tool={tool} />
+                </div>
+              ))}
+            </div>
+
+            {/* Pagination Controls */}
+            {filteredTools.length > 12 && (
+              <div className="glass-effect rounded-2xl p-8">
+                <PaginationControls
+                  currentPage={currentPage}
+                  totalPages={totalPages}
+                  onPageChange={goToPage}
+                  onPrevious={prevPage}
+                  onNext={nextPage}
+                  showLoadMore={showLoadMore}
+                  hasMore={hasMore}
+                  onLoadMore={loadMore}
+                />
               </div>
-            ))}
-          </div>
+            )}
+          </>
         ) : (
           <div className="text-center py-20 glass-effect rounded-2xl">
             <div className="text-gray-500 mb-6">
