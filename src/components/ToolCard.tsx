@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, Sparkles } from 'lucide-react';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { Tool } from '@/types/tool';
 
@@ -14,11 +14,11 @@ interface ToolCardProps {
 const ToolCard: React.FC<ToolCardProps> = ({ tool }) => {
   return (
     <Link to={`/tools/${tool.slug}`} className="block h-full">
-      <Card className="group hover:shadow-lg transition-all duration-200 cursor-pointer h-full">
-        <CardHeader className="pb-3">
+      <Card className="group glass-effect border-white/10 hover:border-blue-500/30 transition-all duration-300 cursor-pointer h-full glow-blue hover:glow-purple bg-transparent backdrop-blur-xl">
+        <CardHeader className="pb-4">
           <div className="flex items-start justify-between">
-            <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 flex-shrink-0">
+            <div className="flex items-center space-x-4">
+              <div className="w-14 h-14 rounded-xl overflow-hidden bg-gradient-to-br from-gray-800/50 to-gray-900/50 flex-shrink-0 glass-effect border border-white/10">
                 <AspectRatio ratio={1}>
                   <img
                     src={tool.logoUrl}
@@ -28,7 +28,7 @@ const ToolCard: React.FC<ToolCardProps> = ({ tool }) => {
                 </AspectRatio>
               </div>
               <div className="min-w-0 flex-1">
-                <CardTitle className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                <CardTitle className="text-xl font-bold text-white group-hover:text-gradient transition-all duration-300">
                   {tool.name}
                 </CardTitle>
               </div>
@@ -37,7 +37,7 @@ const ToolCard: React.FC<ToolCardProps> = ({ tool }) => {
               href={tool.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+              className="text-gray-400 hover:text-blue-400 transition-colors p-2 rounded-lg glass-effect border border-white/10 hover:border-blue-500/30"
               onClick={(e) => e.stopPropagation()}
             >
               <ExternalLink className="w-5 h-5" />
@@ -45,8 +45,8 @@ const ToolCard: React.FC<ToolCardProps> = ({ tool }) => {
           </div>
         </CardHeader>
         
-        <CardContent className="pt-0">
-          <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 line-clamp-3">
+        <CardContent className="pt-0 space-y-4">
+          <p className="text-gray-300 text-sm leading-relaxed line-clamp-3">
             {tool.description}
           </p>
           
@@ -55,8 +55,9 @@ const ToolCard: React.FC<ToolCardProps> = ({ tool }) => {
               <Badge
                 key={tag}
                 variant="secondary"
-                className="text-xs bg-blue-50 text-blue-700 hover:bg-blue-100 dark:bg-blue-900/20 dark:text-blue-300 dark:hover:bg-blue-900/30"
+                className="text-xs glass-effect border-white/20 text-blue-300 hover:text-white bg-blue-500/10 hover:bg-blue-500/20 transition-all duration-200"
               >
+                <Sparkles className="w-3 h-3 mr-1" />
                 {tag}
               </Badge>
             ))}
