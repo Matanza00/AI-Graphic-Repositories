@@ -1,22 +1,230 @@
 [
   {
+    "name": "Venice AI",
+    "description": "Venice AI is a secure, uncensored chatbot that lets users interact with various open-source AI models without data logging. It offers a private environment for text, image, or coding conversations. Users can choose from multiple AI models.",
+    "fullDescription": "Venice AI is a chatbot that allows you to interact with various open-source AI models without any censorship or data logging. It offers a private and secure environment to engage with AI models without the fear of your conversations being monitored or stored. Venice AI lets you choose between multiple AI models including LLMs like Llama 3 and Stable Diffusion (for image generation.) When starting a new chat, you can select between a text, image, or coding conversation depending on your task.",
+    "logoUrl": "https://cdn.prod.website-files.com/63994dae1033718bee6949ce/67a25b9832d1b7ca0ab244fb_66a405ef4ba1decf0f8c9a55_venice_social_preview.png",
+    "link": "https://easywithai.com/ai-chatbots/venice-ai/",
+    "tags": [
+      "AI"
+    ],
+    "slug": "venice-ai"
+  },
+  {
+    "name": "A0.dev",
+    "description": "a0.dev is a platform for mobile developers to quickly build high-quality apps using custom React Native code. It was founded in 2025. The platform aims to reduce development time significantly.",
+    "fullDescription": "a0.dev is a platform that helps mobile developers build high quality apps in days instead of weeks by generating custom react native",
+    "logoUrl": "https://cdn.prod.website-files.com/63994dae1033718bee6949ce/67a8de61718304652e638c3b_a0-dev-logo.png",
+    "link": "https://www.linkedin.com/company/a0-dev",
+    "tags": [
+      "AI"
+    ],
+    "slug": "a0.dev"
+  },
+  {
+    "name": "Phedra AI",
+    "description": "Phedra AI is an AI-powered tool for image editing and creation. It caters to users of all skill levels. It simplifies visual design processes.",
+    "fullDescription": "Phedra AI is an advanced, AI-powered image editing and creation tool designed for users of all skill levels. It simplifies the process of visual design by",
+    "logoUrl": "https://cdn.prod.website-files.com/63994dae1033718bee6949ce/67a6b2f2b428bf4b4c65db3d_homepae-og.png",
+    "link": "https://www.futuretools.io/tools/phedra-ai",
+    "tags": [
+      "Design",
+      "AI"
+    ],
+    "slug": "phedra-ai"
+  },
+  {
+    "name": "Seede AI",
+    "description": "Seede AI is a next-gen AI design platform that allows users to create visual content quickly. It is designed for ease of use and efficiency. As of 2025, it remains a leading tool for visual content creation.",
+    "fullDescription": "About Seede AI. Seede AI is a next-gen AI design platform that empowers anyone to create stunning visual content within 60 seconds.",
+    "logoUrl": "https://cdn.prod.website-files.com/63994dae1033718bee6949ce/67aff175c148e1781e429ad2_screenshot.webp",
+    "link": "https://sourceforge.net/software/product/Seede-AI/",
+    "tags": [
+      "Design",
+      "AI"
+    ],
+    "slug": "seede-ai"
+  },
+  {
+    "name": "ImageTranslate.AI",
+    "description": "ImageTranslate.AI is an AI-powered image translator that translates text in images into over 70 languages. It offers plans including free, pro, and custom options. It provides high-quality, professional translations for business use.",
+    "fullDescription": "Choose the plan that works best for you. Cancel anytime.\n\nFree\n\nPro\n\nCustom\n\nFrequently asked questions\n\nFind answers to common questions about Image Translate AI\n\nWhat is Image Translate AI?\n\nImage Translate AI is a AI-powered image translator which provides instant translations for text in any image across over 70 languages. The image translator provides amazing image translation performance for e-commerce, product marketing, website design and so on. [...] Our AI image translator delivers high-quality, professional translation results suitable for business use. Whether it's product descriptions, marketing materials, or technical documents, you'll get accurate, fluent translations that help you establish a professional image in the global market.\n\nLayout Preserving.\n\nMaintain Original Design [...] Our AI image translator delivers high-quality, professional translation results suitable for business use. Whether it's product descriptions, marketing materials, or technical documents, you'll get accurate, fluent translations that help you establish a professional image in the global market.\n\nAI-Powered Translation.\n\nThe most advanced AI translation model",
+    "logoUrl": "https://cdn.prod.website-files.com/63994dae1033718bee6949ce/67b794164f62894bbce73787_og.png",
+    "link": "https://imagetranslate.ai/",
+    "tags": [
+      "AI"
+    ],
+    "slug": "imagetranslate.ai"
+  },
+  {
+    "name": "Cineocean AI",
+    "description": "Cineocean AI is an AI-powered platform for generating video, image, and text content. It targets content creators. It offers tools for efficient content production.",
+    "fullDescription": "Cineocean AI is an innovative, all-in-one AI-powered platform designed to generate video, image, and text content. Targeted at content creators,",
+    "logoUrl": "https://cdn.prod.website-files.com/63994dae1033718bee6949ce/67bdf5e7d0ae27f95638f367_cineocean-com-logo.png",
+    "link": "https://completeaitraining.com/ai-tools/cineocean-ai/",
+    "tags": [
+      "AI"
+    ],
+    "slug": "cineocean-ai"
+  },
+  {
+    "name": "TestZeus",
+    "description": "TestZeus is an open-source framework for automating Salesforce application tests. It simplifies UI testing using Salesforce's interface. It is open-source and designed for Salesforce applications.",
+    "fullDescription": "TestZeus is an open-source test automation framework designed specifically for Salesforce applications. It simplifies UI testing by leveraging Salesforce's UI",
+    "logoUrl": "https://cdn.prod.website-files.com/63994dae1033718bee6949ce/67bd0b9041b533d950cff10a_tOvMRO2w8x0t2sFPiTviYYlc.png",
+    "link": "https://www.futuretools.io/tools/testzeus",
+    "tags": [
+      "Design"
+    ],
+    "slug": "testzeus"
+  },
+  {
+    "name": "Dzine AI",
+    "description": "Dzine is a user-friendly AI image editor with advanced control over image styles and composition. It features AI-powered tools for image generation, editing, and combining. Known for its intuitive design workflow and powerful image-to-image capabilities.",
+    "fullDescription": "Dzine (formerly Stylar AI) distinguishes itself in the AI design landscape as a user-friendly, controllable AI image editor and graphic design assistant. Dzine (formerly Stylar AI) features a versatile range of styles for easy selection and integrates built-in GPT technology to assist in generating prompts. It excels with its groundbreaking image-to-image and generative fill functions, allowing for precise control over visual details. With its intuitive layer system and a comprehensive suite of [...] All-In-One  AI Design Platform\n\nGenerate and edit in one place with AI-Powered design workflow.\n\nAI Photo Filter\n\nTransform your portrait or photo to cartoon with our  AI Filter. Dzine (formerly Stylar AI) makes it easy to keep your photo details and characters in generative art.\n\nCombine Images with AI\n\nGeneratively merge different elements into one complete image, and make them all match in style. Dzine (formerly Stylar AI) offers the best AI Image Combiner in the world. [...] About Dzine:\n        Dzine is a powerful image generation tool that offers users unparalleled control over image composition and style. One of the key features of Dzine is its predefined styles, which allow you to customize your designs without the need for complex style prompts. This makes it easy for users of all skill levels to create beautiful and professional-looking images.",
+    "logoUrl": "https://cdn.prod.website-files.com/63994dae1033718bee6949ce/67cf05d6b3296c47efcc53bd_dzine-ai-logo.png",
+    "link": "https://www.dzine.ai/",
+    "tags": [
+      "Design",
+      "AI"
+    ],
+    "slug": "dzine-ai"
+  },
+  {
+    "name": "VideoPlus.ai",
+    "description": "VideoPlus.ai is an AI-powered tool that generates high-quality videos from text or image inputs. It offers text-to-video conversion. It is used for creating engaging video content.",
+    "fullDescription": "VideoPlus.ai is an AI-powered video generation tool that creates high-quality videos from text or image inputs. It offers features like Text to Video,",
+    "logoUrl": "https://cdn.prod.website-files.com/63994dae1033718bee6949ce/67d306d5553c23358c7f0e99_videoplus-ai-logo.png",
+    "link": "https://www.futuretools.io/tools/videoplus-ai",
+    "tags": [
+      "AI"
+    ],
+    "slug": "videoplus.ai"
+  },
+  {
+    "name": "AI Color Match",
+    "description": "AI Color Match uses AI to transfer colors from one photo to another. It detects and maps colors accurately. It works on any device with internet access.",
+    "fullDescription": "AI color match refers to the use of artificial intelligence technology to match look and transfer colors. It is about advanced Evoto AI color grading algorithms to quickly extract the color grades of a reference photo and apply it to another image with one click. It can match looks, transfer styles, and map local colors precisely. [...] Looking for image style transfer to improve the texture of real estate, automotive, or interior design advertising photos? Evoto AI Color Match ensures professional, uniform, and branded photo for your industries. Enhance visual punch, making products advertising impressive for consumers.\nPersonal & Social Media Content [...] Q\nHow does Evoto AI color grading work?\nA\nEvoto AI Color Match uses AI color grading algorithms to detect colors in ref photos. For example, it identifies and analyzes people and objects in the reference image. Then, it maps the corresponding local colors and transfers their color styles. With one click, you can apply the style and fine-tune for a coherent look.\nQ\nCan I use Evoto on a mainly used device?\nA",
+    "logoUrl": "https://cdn.prod.website-files.com/63994dae1033718bee6949ce/67d333db1fb28fd257e465f4_promo02.jpeg",
+    "link": "https://www.evoto.ai/features/ai-color-match",
+    "tags": [
+      "AI"
+    ],
+    "slug": "ai-color-match"
+  },
+  {
+    "name": "CRO Benchmark",
+    "description": "CRO Benchmark is an AI-powered platform for optimizing eCommerce conversion rates. It offers comprehensive audits and insights. It helps improve online sales performance.",
+    "fullDescription": "CRO Benchmark is an AI-powered platform designed to provide comprehensive conversion rate optimization (CRO) audits for eCommerce websites.",
+    "logoUrl": "https://cdn.prod.website-files.com/63994dae1033718bee6949ce/67e1e3f1ab6ec4e4a172a0f7_Ky0WlDpOAffRwZDmEVVKFehk.png",
+    "link": "https://ecommercetech.io/apps/cro-benchmark",
+    "tags": [
+      "E-Commerce",
+      "AI"
+    ],
+    "slug": "cro-benchmark"
+  },
+  {
+    "name": "AudioX",
+    "description": "AudioX is an AI tool for generating high-quality audio from text, images, and videos. It uses advanced algorithms to produce realistic sound. As of 2025, it is a popular choice for content creators.",
+    "fullDescription": "AudioX is an AI-powered audio generation tool that transforms various inputs like text, images, and videos into high-quality audio content.",
+    "logoUrl": "https://cdn.prod.website-files.com/63994dae1033718bee6949ce/67e390d95164c75803ea08bc_audiox.png",
+    "link": "https://www.futuretools.io/tools/audiox",
+    "tags": [
+      "AI"
+    ],
+    "slug": "audiox"
+  },
+  {
+    "name": "Runware",
+    "description": "Runware is an advanced AI tool that leverages the Stable Diffusion API for fast generative media creation. It offers efficient solutions for various applications. Pricing and alternatives are available for review.",
+    "fullDescription": "What is Runware? Runware is a cutting-edge AI tool designed to revolutionize generative media through its ultra-fast Stable Diffusion API.",
+    "logoUrl": "https://cdn.prod.website-files.com/63994dae1033718bee6949ce/67e473a67e9f494060e818a4_main.png",
+    "link": "https://www.futurepedia.io/tool/runware",
+    "tags": [
+      "AI"
+    ],
+    "slug": "runware"
+  },
+  {
+    "name": "Flora AI",
+    "description": "Flora AI is an advanced tool that uses a node-based system for creative generation, offering both flexibility and precision. It is designed to enhance ideation and control.",
+    "fullDescription": "FLORA is an innovative AI tool that unleashes creative potential with its node-based generative system, offering boundless ideation and precise control.",
+    "logoUrl": "https://cdn.prod.website-files.com/63994dae1033718bee6949ce/67ec82c51833b6da0470b642_flora_metadata_cover.jpeg",
+    "link": "https://www.rundown.ai/tools/flora-ai",
+    "tags": [
+      "Design",
+      "AI"
+    ],
+    "slug": "flora-ai"
+  },
+  {
+    "name": "Imagerr.AI",
+    "description": "Imagerr.AI generates ALT texts, titles, and captions for website images using AI. It's useful for improving website accessibility and SEO. The tool leverages advanced algorithms for accurate descriptions.",
+    "fullDescription": "Imagerr AI is a tool that generates ALT texts, titles, descriptions, and captions for website images using artificial intelligence.",
+    "logoUrl": "https://cdn.prod.website-files.com/63994dae1033718bee6949ce/67f14677c52323dd03711f47_imagerr-ai-logo.png",
+    "link": "https://www.futuretools.io/tools/imagerr-ai",
+    "tags": [
+      "AI"
+    ],
+    "slug": "imagerr.ai"
+  },
+  {
+    "name": "PXZ.AI",
+    "description": "PXZ.AI is an AI platform that creates high-quality visual content from text, images, or videos. It offers instant generation of professional videos and images with editing features. Users save time and money on content production.",
+    "fullDescription": "PXZ AI is an all-in-one artificial intelligence creative platform that transforms text, image, or video inputs into high-quality visual content. The tool generates professional-looking videos and images instantly, offering editing capabilities and complex video effects without requiring technical expertise. Users ranging from social media creators to small business marketers choose PXZ AI to save time and money on content production, accessing professional-grade visuals without specialized [...] PXZ.AI\n\nDescription:",
+    "logoUrl": "https://cdn.prod.website-files.com/63994dae1033718bee6949ce/67ffe5f0e598b55443e849aa_pxz-ai-logo.png",
+    "link": "https://www.futuretools.io/tools/pxz-ai",
+    "tags": [
+      "AI"
+    ],
+    "slug": "pxz.ai"
+  },
+  {
+    "name": "Enhancor",
+    "description": "Enhancor is a customer service firm specializing in accounting, regulatory compliance, and information technology for real estate and financial services. It operates globally to support various industries.",
+    "fullDescription": "Enhancor is a customer service firm specializing in accounting, regulatory compliance, information technology, and financial services for real estate and",
+    "logoUrl": "https://cdn.prod.website-files.com/63994dae1033718bee6949ce/6825fb6bb5d09ae3f4f3a95f_enhancor-ai-logo.png",
+    "link": "https://in.linkedin.com/company/enhancor",
+    "tags": [],
+    "slug": "enhancor"
+  },
+  {
+    "name": "Paper Animator",
+    "description": "Paper Animator allows users to create animated paper fold-out scenes and text match cuts from any image. It is a straightforward tool for generating engaging visual content. As of 2025, it remains a popular choice for creative projects.",
+    "fullDescription": "PaperAnimator enables users to create paper fold-out animations, magazine letters, and text match cuts from any image in seconds.",
+    "logoUrl": "https://cdn.prod.website-files.com/63994dae1033718bee6949ce/681948fb86ada4ae30af6949_opengraph-image.jpeg",
+    "link": "https://toolfolio.io/blog/create-animated-scenes-with-paper-art",
+    "tags": [
+      "AI"
+    ],
+    "slug": "paper-animator"
+  },
+  {
+    "name": "Enhancor",
+    "description": "Enhancor is a customer service firm specializing in accounting, regulatory compliance, and information technology for real estate and financial services. It operates globally to support various industries.",
+    "fullDescription": "Enhancor is a customer service firm specializing in accounting, regulatory compliance, information technology, and financial services for real estate and",
+    "logoUrl": "https://cdn.prod.website-files.com/63994dae1033718bee6949ce/6825fb6bb5d09ae3f4f3a95f_enhancor-ai-Logo.png",
+    "link": "https://in.linkedin.com/company/enhancor",
+    "tags": [],
+    "slug": "enhancor"
+  },
+  {
     "name": "Ecom Design Lab",
-    "description": "Ecom Design Lab is an AI tool for fashion brands to create model shots and virtual try-on experiences. It generates studio-quality images and offers an API for Shopify integration. It allows customers to try on products virtually.",
-    "fullDescription": "Ecom Design Lab is an AI-powered application designed to create model shots from products instantly, primarily for fashion brands. It eliminates the need for traditional photoshoots by allowing users to upload their product and choose a model to generate stunning, studio-quality images with perfect lighting, clean backgrounds, and a flawless fit. It also offers an API for integrating AI model try-ons directly into Shopify or custom e-commerce platforms, enabling automated product visuals, [...] How to use Ecom Design Lab?\nTo use Ecom Design Lab, you upload your product, choose a model, and the AI generates a lifelike try-on image. For the virtual try-on feature, customers click a 'Try on Button', take and upload a selfie, and then receive a personalized try-on preview.\nEcom Design Lab's Core Features\nAI Model Shot Generation (Studio Try-On)\nTry-On API for Shopify & Ecom Platforms\nPersonalized Virtual Try-On for Customers\nEcom Design Lab's Use Cases\n1 [...] Meroid.ai \nMeroid.ai \nDrive traffic and beat your competition with SEO-optimized content while you sleep. \nDrive traffic and beat your competition with SEO-optimized content while you sleep. \nEcom Design Lab Product Information \nWhat is Ecom Design Lab?",
+    "description": "Ecom Design Lab is an AI-driven platform for creating realistic model images in fashion e-commerce. It helps brands enhance their online presence with high-quality visuals. The platform is widely recognized for its innovative approach.",
+    "fullDescription": "Audience. Ecom Design Lab is an AI-driven platform that transforms the fashion e-commerce space by allowing brands to generate realistic model images",
     "logoUrl": "https://cdn.prod.website-files.com/63994dae1033718bee6949ce/6824fd07196be0413ffe619e_Fs2tX0kkqc2Jx2EtRJm8dLmTQw.jpeg",
-    "link": "https://www.toolify.ai/tool/ecomdesignlab-ai",
+    "link": "https://sourceforge.net/software/product/Ecom-Design-Lab/",
     "tags": [
       "Fashion",
-      "E-Commerce",
       "Design",
-      "AI",
-      "Virtual Try-On"
+      "AI"
     ],
     "slug": "ecom-design-lab"
   },
   {
     "name": "Bevelify",
-    "description": "Bevelify is an AI tool that converts text and images into high-quality 3D models quickly. It supports realistic materials and offers export options for major design tools. Ideal for artists, designers, and developers.",
+    "description": "Bevelify is an AI tool that converts text and images into 3D models quickly. It offers realistic materials and supports major design software. Ideal for artists, developers, and beginners.",
     "fullDescription": "Bevelify is an AI-powered tool that transforms text descriptions or images into high-quality 3D models within minutes, eliminating the traditional barriers of 3D content creation. The platform offers text-to-3D and image-to-3D capabilities with ultra-fast processing, realistic HD materials, and versatile export options compatible with major design tools. Whether you're an artist, game developer, designer, business owner, or complete beginner, Bevelify democratizes 3D modeling by making it",
     "logoUrl": "https://cdn.prod.website-files.com/63994dae1033718bee6949ce/68184ef96f16d9dd7bec7346_ogimage.png",
     "link": "https://www.futuretools.io/tools/bevelify",
