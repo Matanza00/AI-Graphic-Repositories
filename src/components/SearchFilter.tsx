@@ -3,15 +3,7 @@ import React, { useState, useMemo } from 'react';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { Search, X } from 'lucide-react';
-
-interface Tool {
-  name: string;
-  description: string;
-  logoUrl: string;
-  link: string;
-  tags: string[];
-  slug: string;
-}
+import { Tool } from '@/types/tool';
 
 interface SearchFilterProps {
   tools: Tool[];

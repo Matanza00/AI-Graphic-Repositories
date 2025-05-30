@@ -5,16 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { ExternalLink } from 'lucide-react';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
-
-interface Tool {
-  name: string;
-  description: string;
-  fullDescription: string;
-  logoUrl: string;
-  link: string;
-  tags: string[];
-  slug: string;
-}
+import { Tool } from '@/types/tool';
 
 interface ToolCardProps {
   tool: Tool;
