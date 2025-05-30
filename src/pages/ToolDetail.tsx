@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowLeft, ExternalLink, Sparkles } from 'lucide-react';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { generateToolJsonLd, generateBreadcrumbJsonLd } from '@/utils/seo';
-import toolsData from '@/data/tools.json';
+import toolsData from '../../data/tools.json';
 import { Tool } from '@/types/tool';
 
 const ToolDetail: React.FC = () => {

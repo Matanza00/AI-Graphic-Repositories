@@ -5,7 +5,7 @@ import SearchFilter from '@/components/SearchFilter';
 import PaginationControls from '@/components/PaginationControls';
 import { usePagination } from '@/hooks/usePagination';
 import { generateSiteJsonLd, generateBreadcrumbJsonLd } from '@/utils/seo';
-import toolsData from '@/data/tools.json';
+import toolsData from '../../data/tools.json';
 import { Tool } from '@/types/tool';
 
 const Index: React.FC = () => {
