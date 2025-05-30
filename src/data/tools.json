@@ -1,31 +1,18 @@
 [
   {
-    "name": "DALL-E 3",
-    "description": "OpenAI's advanced AI image generator that creates detailed images from text descriptions with improved safety and accuracy.",
-    "fullDescription": "DALL-E 3 represents a significant leap forward in AI-powered image generation technology. Built by OpenAI, this advanced system can understand nuanced requests and translate them into remarkably detailed and accurate images. The model has been designed with enhanced safety measures to reduce harmful content generation while maintaining creative freedom. DALL-E 3 excels at understanding context, style preferences, and complex scene compositions, making it an invaluable tool for artists, designers, marketers, and content creators. Whether you're looking to create concept art, marketing materials, or explore creative ideas, DALL-E 3 offers unprecedented capability in transforming textual descriptions into visual reality.",
-    "logoUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=100&h=100&fit=crop&crop=center",
-    "link": "https://openai.com/dall-e-3",
+    "name": "Ecom Design Lab",
+    "description": "Ecom Design Lab is an AI tool for fashion brands to create model shots and virtual try-on experiences. It generates studio-quality images and offers an API for Shopify integration. It allows customers to try on products virtually.",
+    "fullDescription": "Ecom Design Lab is an AI-powered application designed to create model shots from products instantly, primarily for fashion brands. It eliminates the need for traditional photoshoots by allowing users to upload their product and choose a model to generate stunning, studio-quality images with perfect lighting, clean backgrounds, and a flawless fit. It also offers an API for integrating AI model try-ons directly into Shopify or custom e-commerce platforms, enabling automated product visuals, [...] How to use Ecom Design Lab?\nTo use Ecom Design Lab, you upload your product, choose a model, and the AI generates a lifelike try-on image. For the virtual try-on feature, customers click a 'Try on Button', take and upload a selfie, and then receive a personalized try-on preview.\nEcom Design Lab's Core Features\nAI Model Shot Generation (Studio Try-On)\nTry-On API for Shopify & Ecom Platforms\nPersonalized Virtual Try-On for Customers\nEcom Design Lab's Use Cases\n1 [...] Meroid.ai \nMeroid.ai \nDrive traffic and beat your competition with SEO-optimized content while you sleep. \nDrive traffic and beat your competition with SEO-optimized content while you sleep. \nEcom Design Lab Product Information \nWhat is Ecom Design Lab?",
+    "logoUrl": "https://cdn.prod.website-files.com/63994dae1033718bee6949ce/6824fd07196be0413ffe619e_Fs2tX0kkqc2Jx2EtRJm8dLmTQw.jpeg",
+    "link": "https://www.toolify.ai/tool/ecomdesignlab-ai",
     "tags": [
-      "AI Art",
-      "Text-to-Image",
-      "Creative",
-      "OpenAI"
+      "Fashion",
+      "E-Commerce",
+      "Design",
+      "AI",
+      "Virtual Try-On"
     ],
-    "slug": "dall-e-3"
-  },
-  {
-    "name": "Midjourney",
-    "description": "Popular AI art generator known for creating artistic and stylized images through Discord bot interface.",
-    "fullDescription": "Midjourney has revolutionized the AI art space with its distinctive approach to image generation through a Discord bot interface. Known for producing highly artistic and stylized images, Midjourney has become the go-to choice for artists and creators seeking unique, painterly aesthetics. The platform excels at creating images with rich textures, dramatic lighting, and artistic flair that often surpasses photorealistic generation in terms of visual impact. With its community-driven approach, users can learn from each other's prompts and techniques, making it both a tool and a creative learning environment. Midjourney's strength lies in its ability to interpret artistic styles and create images that feel like they could hang in a gallery.",
-    "logoUrl": "https://images.unsplash.com/photo-1686191128892-c3e8ae6a5b25?w=100&h=100&fit=crop&crop=center",
-    "link": "https://midjourney.com",
-    "tags": [
-      "AI Art",
-      "Text-to-Image",
-      "Creative",
-      "Discord"
-    ],
-    "slug": "midjourney"
+    "slug": "ecom-design-lab"
   },
   {
     "name": "Bevelify",
@@ -41,18 +28,18 @@
     "slug": "bevelify"
   },
   {
-    "name": "Stable Diffusion",
-    "description": "Open-source AI image generation model that can run locally or through various online platforms.",
-    "fullDescription": "Stable Diffusion stands out as the premier open-source AI image generation model, offering unprecedented flexibility and control to users. Unlike proprietary solutions, Stable Diffusion can be run locally on your own hardware, giving you complete privacy and unlimited usage without subscription fees. The model supports extensive customization through various checkpoints, LoRAs, and fine-tuning options, allowing users to create highly specialized versions for specific art styles, subjects, or use cases. With a thriving community of developers and artists, Stable Diffusion has spawned numerous user interfaces, extensions, and improvements. Whether you're a developer wanting to integrate AI art generation into your applications or an artist seeking complete creative control, Stable Diffusion provides the foundation for limitless experimentation.",
-    "logoUrl": "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=100&h=100&fit=crop&crop=center",
-    "link": "https://stability.ai",
+    "name": "Figma AI",
+    "description": "AI features integrated into Figma for design automation, asset generation, and workflow optimization.",
+    "fullDescription": "Figma AI represents the next evolution of collaborative design, bringing artificial intelligence directly into the design workflow used by millions of professionals worldwide. The AI features include automated design suggestions, smart component generation, intelligent layout assistance, and content-aware resizing that maintains design integrity across different screen sizes. Figma AI can analyze your design patterns and suggest improvements, generate design systems components, and even help with accessibility compliance. For teams, it offers intelligent design review capabilities and can automatically generate design specifications for developers. The AI integration feels natural within Figma's interface, enhancing rather than replacing the designer's creative process. Whether you're prototyping mobile apps, designing websites, or creating design systems, Figma AI helps streamline repetitive tasks while maintaining the collaborative features that make Figma indispensable for design teams.",
+    "logoUrl": "https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=100&h=100&fit=crop&crop=center",
+    "link": "https://figma.com",
     "tags": [
-      "AI Art",
-      "Open Source",
-      "Text-to-Image",
-      "Local"
+      "Design",
+      "UI/UX",
+      "Collaboration",
+      "Prototyping"
     ],
-    "slug": "stable-diffusion"
+    "slug": "figma-ai"
   },
   {
     "name": "Canva AI",
@@ -69,32 +56,45 @@
     "slug": "canva-ai"
   },
   {
-    "name": "Ecom Design Lab",
-    "description": "Ecom Design Lab is an AI tool for fashion brands to create model shots and virtual try-on experiences. It generates studio-quality images and offers an API for Shopify integration. It allows customers to try on products virtually.",
-    "fullDescription": "Ecom Design Lab is an AI-powered application designed to create model shots from products instantly, primarily for fashion brands. It eliminates the need for traditional photoshoots by allowing users to upload their product and choose a model to generate stunning, studio-quality images with perfect lighting, clean backgrounds, and a flawless fit. It also offers an API for integrating AI model try-ons directly into Shopify or custom e-commerce platforms, enabling automated product visuals, [...] How to use Ecom Design Lab?\nTo use Ecom Design Lab, you upload your product, choose a model, and the AI generates a lifelike try-on image. For the virtual try-on feature, customers click a 'Try on Button', take and upload a selfie, and then receive a personalized try-on preview.\nEcom Design Lab's Core Features\nAI Model Shot Generation (Studio Try-On)\nTry-On API for Shopify & Ecom Platforms\nPersonalized Virtual Try-On for Customers\nEcom Design Lab's Use Cases\n1 [...] Meroid.ai \nMeroid.ai \nDrive traffic and beat your competition with SEO-optimized content while you sleep. \nDrive traffic and beat your competition with SEO-optimized content while you sleep. \nEcom Design Lab Product Information \nWhat is Ecom Design Lab?",
-    "logoUrl": "https://cdn.prod.website-files.com/63994dae1033718bee6949ce/6824fd07196be0413ffe619e_Fs2tX0kkqc2Jx2EtRJm8dLmTQw.jpeg",
-    "link": "https://www.toolify.ai/tool/ecomdesignlab-ai",
+    "name": "Stable Diffusion",
+    "description": "Open-source AI image generation model that can run locally or through various online platforms.",
+    "fullDescription": "Stable Diffusion stands out as the premier open-source AI image generation model, offering unprecedented flexibility and control to users. Unlike proprietary solutions, Stable Diffusion can be run locally on your own hardware, giving you complete privacy and unlimited usage without subscription fees. The model supports extensive customization through various checkpoints, LoRAs, and fine-tuning options, allowing users to create highly specialized versions for specific art styles, subjects, or use cases. With a thriving community of developers and artists, Stable Diffusion has spawned numerous user interfaces, extensions, and improvements. Whether you're a developer wanting to integrate AI art generation into your applications or an artist seeking complete creative control, Stable Diffusion provides the foundation for limitless experimentation.",
+    "logoUrl": "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=100&h=100&fit=crop&crop=center",
+    "link": "https://stability.ai",
     "tags": [
-      "Fashion",
-      "E-Commerce",
-      "Design",
-      "AI",
-      "Virtual Try-On"
+      "AI Art",
+      "Open Source",
+      "Text-to-Image",
+      "Local"
     ],
-    "slug": "ecom-design-lab"
+    "slug": "stable-diffusion"
   },
   {
-    "name": "Figma AI",
-    "description": "AI features integrated into Figma for design automation, asset generation, and workflow optimization.",
-    "fullDescription": "Figma AI represents the next evolution of collaborative design, bringing artificial intelligence directly into the design workflow used by millions of professionals worldwide. The AI features include automated design suggestions, smart component generation, intelligent layout assistance, and content-aware resizing that maintains design integrity across different screen sizes. Figma AI can analyze your design patterns and suggest improvements, generate design systems components, and even help with accessibility compliance. For teams, it offers intelligent design review capabilities and can automatically generate design specifications for developers. The AI integration feels natural within Figma's interface, enhancing rather than replacing the designer's creative process. Whether you're prototyping mobile apps, designing websites, or creating design systems, Figma AI helps streamline repetitive tasks while maintaining the collaborative features that make Figma indispensable for design teams.",
-    "logoUrl": "https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=100&h=100&fit=crop&crop=center",
-    "link": "https://figma.com",
+    "name": "Midjourney",
+    "description": "Popular AI art generator known for creating artistic and stylized images through Discord bot interface.",
+    "fullDescription": "Midjourney has revolutionized the AI art space with its distinctive approach to image generation through a Discord bot interface. Known for producing highly artistic and stylized images, Midjourney has become the go-to choice for artists and creators seeking unique, painterly aesthetics. The platform excels at creating images with rich textures, dramatic lighting, and artistic flair that often surpasses photorealistic generation in terms of visual impact. With its community-driven approach, users can learn from each other's prompts and techniques, making it both a tool and a creative learning environment. Midjourney's strength lies in its ability to interpret artistic styles and create images that feel like they could hang in a gallery.",
+    "logoUrl": "https://images.unsplash.com/photo-1686191128892-c3e8ae6a5b25?w=100&h=100&fit=crop&crop=center",
+    "link": "https://midjourney.com",
     "tags": [
-      "Design",
-      "UI/UX",
-      "Collaboration",
-      "Prototyping"
+      "AI Art",
+      "Text-to-Image",
+      "Creative",
+      "Discord"
     ],
-    "slug": "figma-ai"
+    "slug": "midjourney"
+  },
+  {
+    "name": "DALL-E 3",
+    "description": "OpenAI's advanced AI image generator that creates detailed images from text descriptions with improved safety and accuracy.",
+    "fullDescription": "DALL-E 3 represents a significant leap forward in AI-powered image generation technology. Built by OpenAI, this advanced system can understand nuanced requests and translate them into remarkably detailed and accurate images. The model has been designed with enhanced safety measures to reduce harmful content generation while maintaining creative freedom. DALL-E 3 excels at understanding context, style preferences, and complex scene compositions, making it an invaluable tool for artists, designers, marketers, and content creators. Whether you're looking to create concept art, marketing materials, or explore creative ideas, DALL-E 3 offers unprecedented capability in transforming textual descriptions into visual reality.",
+    "logoUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=100&h=100&fit=crop&crop=center",
+    "link": "https://openai.com/dall-e-3",
+    "tags": [
+      "AI Art",
+      "Text-to-Image",
+      "Creative",
+      "OpenAI"
+    ],
+    "slug": "dall-e-3"
   }
 ]
