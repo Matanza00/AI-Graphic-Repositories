@@ -67,26 +67,38 @@ const Layout: React.FC<LayoutProps> = ({
   }, [title, description, ogImage]);
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
-      <header className="bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
-            AI Graphic Tools Directory
-          </h1>
-          <p className="mt-2 text-gray-600 dark:text-gray-300">
-            Discover the best AI-powered graphic design tools and resources
-          </p>
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-gray-900 to-slate-950">
+      {/* Animated background particles */}
+      <div className="fixed inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl animate-pulse delay-2000"></div>
+      </div>
+
+      <header className="relative glass-effect border-b border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="text-center">
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">
+              <span className="text-gradient">AI Graphic Tools</span>
+              <br />
+              <span className="text-white/90">Directory</span>
+            </h1>
+            <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+              Discover the most advanced AI-powered graphic design tools with hyper-realistic capabilities
+            </p>
+            <div className="mt-6 w-24 h-1 mx-auto holographic rounded-full"></div>
+          </div>
         </div>
       </header>
       
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {children}
       </main>
       
-      <footer className="bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 mt-16">
+      <footer className="relative glass-effect border-t border-white/10 mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <p className="text-center text-gray-600 dark:text-gray-300">
-            © 2024 AI Graphic Tools Directory. Discover the future of design.
+          <p className="text-center text-gray-400">
+            © 2024 AI Graphic Tools Directory. Experience the future of hyper-realistic design.
           </p>
         </div>
       </footer>

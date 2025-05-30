@@ -4,7 +4,7 @@ import { useParams, Link } from 'react-router-dom';
 import Layout from '@/components/Layout';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, ExternalLink } from 'lucide-react';
+import { ArrowLeft, ExternalLink, Sparkles } from 'lucide-react';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { generateToolJsonLd, generateBreadcrumbJsonLd } from '@/utils/seo';
 import toolsData from '@/data/tools.json';
@@ -17,15 +17,15 @@ const ToolDetail: React.FC = () => {
   if (!tool) {
     return (
       <Layout title="Tool Not Found">
-        <div className="text-center py-16">
-          <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+        <div className="text-center py-20 glass-effect rounded-2xl">
+          <h1 className="text-3xl font-bold text-white mb-6">
             Tool Not Found
           </h1>
-          <p className="text-gray-600 dark:text-gray-400 mb-8">
-            The tool you're looking for doesn't exist.
+          <p className="text-gray-400 mb-8 text-lg">
+            The tool you're looking for doesn't exist in our hyper-realistic directory.
           </p>
           <Link to="/">
-            <Button>
+            <Button className="glow-blue">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Home
             </Button>
@@ -70,19 +70,19 @@ const ToolDetail: React.FC = () => {
       description={tool.description}
       ogImage={tool.logoUrl}
     >
-      <div className="max-w-4xl mx-auto space-y-8">
+      <div className="max-w-5xl mx-auto space-y-8">
         {/* Back Navigation */}
         <Link to="/">
-          <Button variant="ghost" className="mb-6">
+          <Button variant="ghost" className="mb-8 glass-effect glow-blue">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Tools
           </Button>
         </Link>
 
         {/* Tool Header */}
-        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 p-8">
-          <div className="flex items-start gap-6">
-            <div className="w-20 h-20 rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-700 flex-shrink-0">
+        <div className="glass-effect rounded-3xl p-10 glow-purple card-3d">
+          <div className="flex items-start gap-8">
+            <div className="w-24 h-24 rounded-2xl overflow-hidden bg-gradient-to-br from-gray-800 to-gray-900 flex-shrink-0 glow-blue">
               <AspectRatio ratio={1}>
                 <img
                   src={tool.logoUrl}
@@ -93,21 +93,22 @@ const ToolDetail: React.FC = () => {
             </div>
             
             <div className="flex-1">
-              <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-3">
-                {tool.name}
+              <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                <span className="text-gradient">{tool.name}</span>
               </h1>
               
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
+              <p className="text-xl text-gray-300 mb-6 leading-relaxed">
                 {tool.description}
               </p>
               
-              <div className="flex flex-wrap gap-2 mb-6">
+              <div className="flex flex-wrap gap-3 mb-8">
                 {tool.tags.map((tag) => (
                   <Badge
                     key={tag}
                     variant="secondary"
-                    className="bg-blue-50 text-blue-700 hover:bg-blue-100 dark:bg-blue-900/20 dark:text-blue-300 dark:hover:bg-blue-900/30"
+                    className="glass-effect text-blue-300 border-blue-500/30 px-4 py-2 text-sm glow-blue"
                   >
+                    <Sparkles className="w-3 h-3 mr-1" />
                     {tag}
                   </Badge>
                 ))}
@@ -118,9 +119,9 @@ const ToolDetail: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button className="bg-blue-600 hover:bg-blue-700 text-white">
-                  <ExternalLink className="w-4 h-4 mr-2" />
-                  Visit {tool.name}
+                <Button className="holographic text-white font-semibold px-8 py-3 rounded-xl glow-blue text-lg">
+                  <ExternalLink className="w-5 h-5 mr-2" />
+                  Experience {tool.name}
                 </Button>
               </a>
             </div>
@@ -128,33 +129,33 @@ const ToolDetail: React.FC = () => {
         </div>
 
         {/* Full Description */}
-        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 p-8">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-            About {tool.name}
+        <div className="glass-effect rounded-3xl p-10 glow-blue card-3d">
+          <h2 className="text-3xl font-bold mb-6">
+            <span className="text-gradient">About {tool.name}</span>
           </h2>
-          <div className="prose prose-gray dark:prose-invert max-w-none">
-            <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+          <div className="prose prose-lg prose-invert max-w-none">
+            <p className="text-gray-300 leading-relaxed text-lg">
               {tool.fullDescription}
             </p>
           </div>
         </div>
 
-        {/* Tool Link Section */}
-        <div className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 rounded-lg p-8 text-center">
-          <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-            Ready to try {tool.name}?
+        {/* CTA Section */}
+        <div className="glass-effect rounded-3xl p-12 text-center glow-purple card-3d">
+          <h3 className="text-2xl font-bold mb-4">
+            <span className="text-gradient">Ready to create with {tool.name}?</span>
           </h3>
-          <p className="text-gray-600 dark:text-gray-300 mb-6">
-            Click the button below to visit the official website and get started.
+          <p className="text-gray-300 mb-8 text-lg max-w-2xl mx-auto">
+            Join thousands of creators using cutting-edge AI technology to bring their visions to life in stunning 4K quality.
           </p>
           <a
             href={tool.link}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-              <ExternalLink className="w-5 h-5 mr-2" />
-              Get Started with {tool.name}
+            <Button size="lg" className="holographic text-white font-bold px-10 py-4 rounded-xl glow-blue text-xl">
+              <ExternalLink className="w-6 h-6 mr-3" />
+              Launch {tool.name}
             </Button>
           </a>
         </div>

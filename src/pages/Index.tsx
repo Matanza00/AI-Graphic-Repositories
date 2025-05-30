@@ -44,35 +44,36 @@ const Index: React.FC = () => {
       title="AI Graphic Tools Directory - Discover the Best AI Design Tools"
       description="Explore the most comprehensive collection of AI-powered graphic design tools. Find the perfect AI tool for your creative projects."
     >
-      <div className="space-y-8">
+      <div className="space-y-12">
         {/* Search and Filter */}
-        <SearchFilter
-          tools={toolsData}
-          onFilteredToolsChange={setFilteredTools}
-        />
+        <div className="glass-effect rounded-2xl p-8 glow-blue">
+          <SearchFilter
+            tools={toolsData}
+            onFilteredToolsChange={setFilteredTools}
+          />
+        </div>
 
         {/* Tools Grid */}
         {filteredTools.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {filteredTools.map((tool) => (
-              <ToolCard
-                key={tool.slug}
-                tool={tool}
-              />
+              <div key={tool.slug} className="card-3d">
+                <ToolCard tool={tool} />
+              </div>
             ))}
           </div>
         ) : (
-          <div className="text-center py-16">
-            <div className="text-gray-400 dark:text-gray-600 mb-4">
-              <svg className="mx-auto h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <div className="text-center py-20 glass-effect rounded-2xl">
+            <div className="text-gray-500 mb-6">
+              <svg className="mx-auto h-20 w-20 glow-purple" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9.172 16.172a4 4 0 015.656 0M9 12h6m-6-4h6m2 5.291A7.962 7.962 0 0112 15c-2.34 0-4.467-.881-6.08-2.33l-.147-.15M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
             </div>
-            <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
+            <h3 className="text-2xl font-bold text-white mb-4">
               No tools found
             </h3>
-            <p className="text-gray-600 dark:text-gray-400">
-              Try adjusting your search terms or filters to find what you're looking for.
+            <p className="text-gray-400 text-lg">
+              Try adjusting your search terms or filters to discover amazing AI tools.
             </p>
           </div>
         )}
