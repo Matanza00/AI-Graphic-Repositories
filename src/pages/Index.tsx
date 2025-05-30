@@ -58,10 +58,6 @@ const Index: React.FC = () => {
               <ToolCard
                 key={tool.slug}
                 tool={tool}
-                onClick={() => {
-                  // Navigation would be handled by router in a real app
-                  console.log(`Navigating to: /tools/${tool.slug}`);
-                }}
               />
             ))}
           </div>
