@@ -1,15 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Layout from '@/components/Layout';
 import ToolCard from '@/components/ToolCard';
 import SearchFilter from '@/components/SearchFilter';
 import PaginationControls from '@/components/PaginationControls';
 import { usePagination } from '@/hooks/usePagination';
 import { generateSiteJsonLd, generateBreadcrumbJsonLd } from '@/utils/seo';
-import toolsData from '../../data/tools.json';
+import { supabase } from '@/lib/supabaseClient'; // Ensure this is correctly set up
 import { Tool } from '@/types/tool';
 
 const Index: React.FC = () => {
-  const [filteredTools, setFilteredTools] = useState<Tool[]>(toolsData);
+  const [tools, setTools] = useState<Tool[]>([]);
+  const [filteredTools, setFilteredTools] = useState<Tool[]>([]);
 
   const {
     currentPage,
@@ -26,18 +27,44 @@ const Index: React.FC = () => {
     itemsPerPage: 12,
   });
 
+  useEffect(() => {
+  const fetchTools = async () => {
+    const { data, error } = await supabase
+      .from('GraphicDir')
+      .select('*')
+      .order('id', { ascending: false });
+
+    if (error) {
+      console.error('Error fetching tools:', error);
+    } else {
+      const mappedTools: Tool[] = (data || []).map((item) => ({
+        name: item.Name,
+        description: item.Description,
+        fullDescription: item['Full Description'] ?? '',
+        logoUrl: item.Logo,
+        link: item.URL,
+        tags: item.Tags ?? [],
+        slug: item.Name?.toLowerCase().replace(/\s+/g, '-'),
+      }));
+
+      setTools(mappedTools);
+      setFilteredTools(mappedTools);
+    }
+  };
+
+  fetchTools();
+}, []);
+
+
   const structuredData = {
     site: generateSiteJsonLd(),
     breadcrumb: generateBreadcrumbJsonLd()
   };
 
-  // Add structured data to page
-  React.useEffect(() => {
-    // Remove existing structured data
+  useEffect(() => {
     const existingScripts = document.querySelectorAll('script[type="application/ld+json"]');
     existingScripts.forEach(script => script.remove());
 
-    // Add new structured data
     const siteScript = document.createElement('script');
     siteScript.type = 'application/ld+json';
     siteScript.textContent = JSON.stringify(structuredData.site);
@@ -49,7 +76,6 @@ const Index: React.FC = () => {
     document.head.appendChild(breadcrumbScript);
 
     return () => {
-      // Cleanup on unmount
       const scripts = document.querySelectorAll('script[type="application/ld+json"]');
       scripts.forEach(script => script.remove());
     };
@@ -64,17 +90,17 @@ const Index: React.FC = () => {
         {/* Search and Filter */}
         <div className="glass-effect rounded-2xl p-8 glow-blue">
           <SearchFilter
-            tools={toolsData}
+            tools={tools}
             onFilteredToolsChange={setFilteredTools}
           />
         </div>
 
-        {/* Tools Grid - Responsive: 3 columns on large, 2 on iPad, 1 on mobile */}
+        {/* Tools Grid */}
         {paginatedItems.length > 0 ? (
           <>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {paginatedItems.map((tool) => (
-                <div key={tool.slug} className="card-3d">
+                <div key={tool.slug || tool.name} className="card-3d">
                   <ToolCard tool={tool} />
                 </div>
               ))}
